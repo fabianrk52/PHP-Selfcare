@@ -9,7 +9,7 @@ if(isset($medID)){
 
   $query="SELECT  `Name`, `Expiry_date`, `Dosage`,`Instruction`,`mg` 
           FROM 247_user_meds AS U
-          INNER JOIN 247_medication AS M ON U.Med_id=".$medID."
+          INNER JOIN 247_medication AS M ON M.Med_id=".$medID."
           WHERE U.User_id ='".$_SESSION["user_id"]."'";
 
   $result=mysqli_query($connection, $query);
