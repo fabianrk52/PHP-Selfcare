@@ -1,9 +1,9 @@
 <?php
- include '/server/data/db.php';
- include '/server/data/config.php';
- include '/server/data/functions.php';
+ include 'server/data/db.php';
+ include 'server/data/config.php';
+ include 'server/data/functions.php';
 
-    chack_session();
+    check_session();
 
     $query="SELECT  `Doc_name`, `D_id`
             FROM 247_Doctors AS D
@@ -38,7 +38,7 @@
 
 <body id="wrapper">
 <header>
-    <a href="main.html" class="logo"></a>
+    <a href="main.php" class="logo"></a>
 </header>
 <main id=main class="container">
         <div class="row">

@@ -1,9 +1,9 @@
 <?php
-include '/server/data/db.php';
-include '/server/data/config.php';
-include '/server/data/functions.php';
+include 'server/data/db.php';
+include 'server/data/config.php';
+include 'server/data/functions.php';
 
-chack_session();
+check_session();
 $docID = mysqli_real_escape_string($connection, $_GET['docID']);
 if(isset($docID)){
   $query="SELECT  `Doc_name`, `Address`, `Spec`,`img`,`Date` 

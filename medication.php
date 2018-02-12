@@ -1,9 +1,9 @@
 <?php
- include '/server/data/db.php';
- include '/server/data/config.php';
- include '/server/data/functions.php';
+ include 'server/data/db.php';
+ include 'server/data/config.php';
+ include 'server/data/functions.php';
 
-    chack_session();
+    check_session();
 
     $query="SELECT  `Name`, `ID`  FROM 247_medication AS M
             INNER JOIN 247_user_meds AS U ON M.Med_id=U.Med_id
@@ -36,7 +36,7 @@
 </head>
 <body id="wrapper">
   <header>
-      <a href="main.html" class="logo"></a>
+      <a href="main.php" class="logo"></a>
     </header>  
     <main id=main class="container">
         <div class="row">

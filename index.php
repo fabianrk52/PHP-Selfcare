@@ -1,6 +1,6 @@
 <?php
-    include '/server/data/db.php';
-    include '/server/data/config.php';
+    include 'server/data/db.php';
+    include 'server/data/config.php';
 
     session_start();
     if(!empty($_POST["user_id"])){
