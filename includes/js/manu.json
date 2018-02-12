@@ -1,0 +1,36 @@
+[{  "id": "user",
+		"title": "David",
+		"image_src": "includes/images/profilepic.png",
+		"class":"profile",
+		"href":"settings.php"
+	},
+
+	{ "id": "madic",
+		"title": "Medicine",
+		"class":"fa fa-medkit fa-5x",
+		"href":"medication.php"
+	},
+
+	{ "id": "watch",
+		"title": "HR Watch",
+		"class":"fa hrwatch",
+		"href":"#"
+	},
+
+	{  "id": "appoint",
+		"title": "Appointments",
+		"class":"fa fa-user-md fa-5x",
+		"href":"appointments.php"
+	},
+
+	{ "id": "massage",
+		"title": "Messages",
+		"class":"fa fa-envelope fa-5x",
+		"href":"#"
+	},
+	
+	{ "id": "test",
+		"title": "Test Result",
+		"class":"fa fa-flask fa-5x",
+		"href":"#"
+	}]

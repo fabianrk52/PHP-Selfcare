@@ -1,0 +1,125 @@
+*{
+    margin: 0 auto;
+    padding: 0px;
+}
+
+#wrapper{
+    text-align: center;
+}
+
+footer{
+    position: relative;
+    bottom: 0px;
+    height: 60px;
+    width: 100%;
+    margin-top: 15px;
+    border-top: 1px solid black;
+}
+
+footer>p{
+    margin-top: 17px; 
+}
+
+header{
+    border-bottom: 1px solid;
+    padding-top: 10px;
+    position: relative;
+}
+
+#log{
+    margin: 0px 35px 0px 35px;
+}
+
+
+a, a::selection, a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+#main{
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+.bold{
+    font-weight: bold;
+}
+.errMsg{
+    font-size: 12px;
+    color: red;
+    font-weight: bold;
+}
+
+.logLogo{
+    display: inline-block;
+    background-image: url("../images/log_logo.png");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.logo{
+    width: 104px;
+    height: 105px;
+    display: inline-block;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    margin-bottom:5px; 
+}
+
+.hrwatch{
+    width: 110px;
+    height: 101.34px;
+    clear: both;
+    display: inline-block;
+    background-image: url("../images/hrwatch.png");
+    background-repeat: no-repeat;
+}
+
+.btn-cancel {
+    color: #fff;
+    background-color: #cc1717;
+    border-color: #cc1717;
+}
+
+.profile{
+    border-radius: 12.5%;
+    margin-bottom: 9px;
+}
+
+.fingerprint{
+    display: inline-block;
+    background-image: url("../images/fingerprint.png");
+    height:100px;
+    width: 100px;
+    background-repeat: no-repeat;
+}
+.profile-size{
+    height: 120px;
+    width: 120px;
+    border: 0.5px solid black; 
+}
+
+
+.red{
+    color: red;
+}
+
+.button{
+    border: 2px solid rgba(128, 128, 128, 0.322);
+    border-radius: 8%;
+    font-size: 22px;
+}
+
+#back{
+    background-image: url("../images/back.png");
+    background-repeat: no-repeat;
+    height: 45px;
+    width: 45px;
+}
+
+.smaltext{
+    font-size: 13px;
+}
