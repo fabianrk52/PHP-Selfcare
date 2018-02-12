@@ -8,8 +8,8 @@ $medID = mysqli_real_escape_string($connection, $_GET['medID']);
 if(isset($medID)){
 
   $query="SELECT  `Name`, `Expiry_date`, `Dosage`,`Instruction`,`mg` 
-          FROM 247_medication AS M
-          INNER JOIN 247_user_meds AS U ON M.Med_id=".$medID."
+          FROM 247_user_meds AS U
+          INNER JOIN 247_medication AS M ON U.Med_id=".$medID."
           WHERE U.User_id ='".$_SESSION["user_id"]."'";
 
   $result=mysqli_query($connection, $query);

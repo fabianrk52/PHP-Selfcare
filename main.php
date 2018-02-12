@@ -32,7 +32,7 @@
 
     <footer> <p>&copy Amit Shwartz & Fabian Roitman</p></footer>
 
-    <script src="includes/js/get_manu.js"></script>
+    <script src="includes/js/get_menu.js"></script>
   </body>
 </html>
 <?php mysqli_close($connection); ?>

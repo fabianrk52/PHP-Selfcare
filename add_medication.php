@@ -16,7 +16,7 @@ if(isset($_POST['medID']) && isset($_POST['expiryDate'])){
     if(mysqli_query($connection, $query)){
        $flag=1;
     } else{
-        echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+        echo "ERROR: Could not able to execute $query. " . mysqli_error($connection);
     }
  }
 
@@ -95,10 +95,10 @@ $connection->close();
             </div>
         </main>
         <footer> <p>&copy Amit Shwartz & Fabian Roitman</p></footer>
+        <?php
+           if(isset($flag)){
+             echo '<script> swal("Medication added!", "", "success");</script>';
+             }
+          ?>
     </body>
-    <?php
-    if(isset($flag)){
-        echo '<script> swal("Medication added!", "", "success");</script>';
-    }
-    ?>
 </html>

@@ -7,8 +7,8 @@ check_session();
 $docID = mysqli_real_escape_string($connection, $_GET['docID']);
 if(isset($docID)){
   $query="SELECT  `Doc_name`, `Address`, `Spec`,`img`,`Date` 
-          FROM 247_Doctors AS D
-          INNER JOIN 247_user_appointment AS U ON D.Doc_id=".$docID."
+          FROM 247_user_appointment AS U
+          INNER JOIN 247_Doctors AS D ON U.Doc_id=".$docID."
           WHERE U.User_id ='".$_SESSION["user_id"]."'";
 
   $result=mysqli_query($connection, $query);
